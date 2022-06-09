@@ -1,0 +1,9 @@
+services:
+  yocto-builder:
+        container_name: ref-img-yocto-builder    
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        env_file:
+          - ./.env
+    
